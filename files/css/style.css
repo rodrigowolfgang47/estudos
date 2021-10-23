@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: auto;
+  background-color: #f4f4f4;
+}
+.main-content .main-grid {
+  display: flex;
+  flex-grow: 1;
+  max-width: 1170px;
+  background-color: red;
+}
+.main-content .main-grid .carrocel-content {
+  display: flex;
+  flex-grow: 1;
+  height: 350px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-content .main-grid .carrocel-content .btn-content {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+}
+.main-content .main-grid .carrocel-content .btn-content .js-before-btn {
+  margin-right: calc(100% - 117px);
+}
+.main-content .main-grid .carrocel-content .btn-content .js-before-btn, .main-content .main-grid .carrocel-content .btn-content .js-after-btn {
+  opacity: 0.7;
+  transition: 1s;
+}
+.main-content .main-grid .carrocel-content .btn-content .js-before-btn:hover, .main-content .main-grid .carrocel-content .btn-content .js-after-btn:hover {
+  opacity: 1;
+}
+.main-content .main-grid .carrocel-content .btn-content button {
+  padding: 10px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+}
+.main-content .main-grid .carrocel-masc {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+  width: 95%;
+  max-width: 1100px;
+  height: 100%;
+  overflow: hidden;
+}
+.main-content .main-grid .carrocel-itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81457c;
+  width: 100%;
+  min-width: 1100px;
+  height: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
