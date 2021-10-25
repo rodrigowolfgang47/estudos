@@ -44,6 +44,7 @@
 }
 .main-content .main-grid .carrocel-content .btn-content .js-before-btn:hover, .main-content .main-grid .carrocel-content .btn-content .js-after-btn:hover {
   opacity: 1;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 .main-content .main-grid .carrocel-content .btn-content button {
   padding: 10px;
@@ -60,16 +61,17 @@
   width: 95%;
   max-width: 1100px;
   height: 100%;
-  overflow: hidden;
+}
+.main-content .main-grid .carrocel-slider {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .main-content .main-grid .carrocel-itens {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #81457c;
-  width: 100%;
-  min-width: 1100px;
-  height: 100%;
   font-size: 40px;
   font-weight: bolder;
   color: white;
