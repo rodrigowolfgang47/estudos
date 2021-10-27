@@ -12,9 +12,12 @@ var nextBtn = function(){
         console.log(i)
         slider.style.transition = '.5s'
         slider.style.transform = `translate(${(-widthMasc) * i}px)`
-        // if (i >= slider.childElementCount){
-        //     i = 0
-        // }
+        if (i >= slider.childElementCount){
+            i = 0
+            slider.style.transform = `translate(${(-widthMasc) * i}px)`;
+            console.log('Caiu aqui', i)
+        }
+
     });
 };
 
@@ -24,6 +27,12 @@ var prevtBtn = function(){
         console.log(i)
         slider.style.transition = '.5s';
         slider.style.transform = `translate(${(-widthMasc) * i}px)`;
+        if (i < 0){
+            i = slider.childElementCount
+            i--
+            slider.style.transform = `translate(${(-widthMasc) * i}px)`;
+            console.log('Caiu aqui', i)
+        }
     });
 };
 
