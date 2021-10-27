@@ -61,6 +61,7 @@
   width: 95%;
   max-width: 1100px;
   height: 100%;
+  overflow: hidden;
 }
 .main-content .main-grid .carrocel-slider {
   width: 100%;
